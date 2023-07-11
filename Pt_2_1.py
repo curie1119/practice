@@ -1,4 +1,4 @@
-import  random
+import random
 print ("фиолетовый, красный, синий, оранжевый, зелёный")
 colour = random.choice(["фиолетовый", "красный", "синий", "оранжевый", "зелёный"])
 again = True
