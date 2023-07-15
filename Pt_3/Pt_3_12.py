@@ -1,6 +1,5 @@
-s = input("Введите строку: ")
 dict = {}
-for i in s:
-    if i != ' ':
-        dict[i] = s.count(i)
+for x in range(1, 11):
+    if x%2==0:
+        dict[x] = x ** 3
 print(dict)
