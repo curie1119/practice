@@ -4,5 +4,5 @@ def is_composite(n):
         k = k + 1
     return (k ** 2 > n)
 
-b = [i for i in range(100) if is_composite(i)]
+b = [i for i in range(int(input("Начальное значение: ")), int(input("Конечное значение: ")) + 1) if is_composite(i) == False]
 print(b)
