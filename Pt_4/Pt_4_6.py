@@ -1,8 +1,12 @@
 def rot13(s):
-    key = "абвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ" \
-          "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    val = "мнопрстуфхцчшщъыьэюяабвгдеёжзийклМНОПРСТУФХЦЧШЩЪЫЬЭЮЯАБВГДЕЁЖЗИЙКЛ" \
-          "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM"
+    key = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя" \
+          "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ" \
+          "abcdefghijklmnopqrstuvwxyz" \
+          "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    val = "мнопрстуфхцчшщъыьэюяабвгдеёжзийкл" \
+          "МНОПРСТУФХЦЧШЩЪЫЬЭЮЯАБВГДЕЁЖЗИЙКЛ" \
+          "nopqrstuvwxyzabcdefghijklm" \
+          "NOPQRSTUVWXYZABCDEFGHIJKLM"
     transform = dict(zip(key, val))
     return ''.join(transform.get(char, char) for char in s)
 

@@ -16,12 +16,12 @@ def all_ways(graphh, startt, endd, way=[]):
 
 
 graph = {
- 'A': ['B', 'C'],
- 'B': ['D', 'E'],
- 'C': ['F'],
- 'D': [],
- 'E': ['F'],
- 'F': []
+    'A': ['B', 'C'],
+    'B': ['D', 'E'],
+    'C': ['F'],
+    'D': [],
+    'E': ['F'],
+    'F': []
 }
 start = 'A'
 end = 'F'
