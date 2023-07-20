@@ -9,5 +9,6 @@ def f(n):
         return f(n)
     else:
         print("Спасибо")
-n = int(input("Введите число: "))
-print(f(n))
+
+
+print(f(int(input("Введите число: "))))
