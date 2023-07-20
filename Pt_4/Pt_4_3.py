@@ -5,7 +5,10 @@ def is_composite(n):
     return k ** 2 > n
 
 
-b = [i for i in range(int(input("Начальное значение: ")),
-                      int(input("Конечное значение: "))
-                      + 1) if is_composite(i)]
-print(b)
+c = []
+a = int(input("Начальное значение: "))
+b = int(input("Конечное значение: "))
+for i in range(a, b + 1):
+    if is_composite(i):
+        c.append(i)
+print(c)
