@@ -11,7 +11,7 @@ while k < 3:
 
     program = random.choice([0, 1])
     if player == program:
-        vict = vict+1
+        vict = vict + 1
         k = 0
         print("Вы выиграли")
 
@@ -20,6 +20,7 @@ while k < 3:
         k = k + 1
         print("Вы проиграли")
 
-    print("Количество выиграшей составляет", vict, "раз(а), а проигрышей,", lose, "раз(а)")
+    print("Количество выиграшей составляет", vict,
+          "раз(а), а проигрышей,", lose, "раз(а)")
     print()
-print ("Игра окончена")
+print("Игра окончена")

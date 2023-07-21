@@ -1,8 +1,8 @@
 import random
-print ("фиолетовый, красный, синий, оранжевый, зелёный")
+print("фиолетовый, красный, синий, оранжевый, зелёный")
 colour = random.choice(["фиолетовый", "красный", "синий", "оранжевый", "зелёный"])
 again = True
-while again == True:
+while again:
     choice = input("Выберите цвет из вышеперечисленных:  ")
     choice = choice.lower()
     if colour == choice:
