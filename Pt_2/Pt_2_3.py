@@ -5,7 +5,7 @@ def check(x):
     n = 0
     while x != 0:
         n += 1
-        x = x//10
+        x = x // 10
     return n
 
 
@@ -19,7 +19,7 @@ def isarmstr(x):
     n = check(x)
     while abc != 0:
         b = abc % 10
-        sum = sum + (b**n)
+        sum = sum + (b ** n)
         abc = abc//10
     return sum
 
